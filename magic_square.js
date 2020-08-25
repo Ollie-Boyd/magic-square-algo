@@ -1,9 +1,50 @@
 class MagicSquare {
-  constructor(height, width) {
-    this.height = height;
-    this.width = width;
+  constructor(array) {
+    this.flawedSquare = array;
+    this.reference = [[8,1,6],[3,5,7],[4,9,2]]
   }
-  // Getter can be used like this example.area as if it were a property.
+
+
+  generatePermutations(){
+    //rotate
+    //for each
+    
+  }
+
+  mirrorX(array){
+    return
+  }
+
+  mirrorX(array){
+    return
+  }
+
+  rotate90Clockwise(array){
+    const rotated = [[],[],[]]
+    array.forEach((subArr)=>(
+      subArr.forEach((num, index)=>(
+        rotated[index].unshift(num)
+      ))
+    ))
+    return rotated
+  }
+
+  compareSquares(reference, flawed){
+    return
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
   get area() {
     return this.calcArea();
   }
@@ -19,3 +60,5 @@ class MagicSquare {
   }
 
 }
+
+export default MagicSquare

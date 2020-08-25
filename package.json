@@ -4,11 +4,20 @@
   "description": "",
   "main": "taxi.js",
   "scripts": {
-    "test": "mocha specs"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^6.2.0"
+    "@babel/preset-env": "^7.11.0",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.2",
+    "mocha": "^6.2.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   }
 }
+
